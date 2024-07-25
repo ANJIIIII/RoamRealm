@@ -1,0 +1,3096 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"> 
+  <script src="https://kit.fontawesome.com/97828b0acc.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .group:hover .group-hover\:text-white {
+      color: white;
+    }
+  </style>
+<body class="overflow-x-hidden">
+    <!-----------------------------------------NAVBAR----------------------------------------------->
+
+   
+  <div id="nav1" class="absolute z-10 w-screen">
+     <div class=" bg-[#13357B] w-screen hidden lg:block">
+        <div class="flex justify-between max-w-[90%] mx-auto  p-2 text-white ">
+            <div class="flex"> 
+                <a class="btn border rounded-full p-1 me-2"><i class="fab fa-facebook-f fw-normal h-[20px] w-[20px] ml-1"></i></a>
+                <a class="btn border rounded-full p-1 me-2"><i class="fab fa-twitter fw-normal h-[20px] w-[20px] ml-1"></i></a>
+                <a class="btn border rounded-full p-1 me-2"><i class="fab fa-linkedin-in fw-normal h-[20px] w-[20px] ml-1"></i></a>
+                <a class="btn border rounded-full p-1 me-2"><i class="fab fa-instagram fw-normal h-[20px] w-[20px] ml-1"></i></a>
+                <a class="btn border rounded-full p-1 me-2"><i class=" fab fa-youtube fw-normal h-[20px] w-[20px] ml-1"></i></a>
+                
+            </div>
+    
+            <div class="gap-40">
+                
+                <a href="#Packages" class="mr-4">
+                    <small>
+                        <i class="fa fa-user me-2"></i> 
+                        Register
+                    </small>  
+                </a>
+                <a href="#Packages" class="mr-4">
+                    <small>
+                        <i class="fa fa-sign-in-alt me-2"></i> 
+                        Login
+                    </small>  
+                </a>
+                <a id="mydashbtn" href="#Packages" class="mr-4 ">
+                    <small>
+                        <i class="fa fa-home me-2"></i> 
+                        My Dashboard
+                        <i class="fa-solid fa-caret-down "></i>
+                    </small>  
+                </a>
+            <!-- dropdown -->
+                <div id="mydashdrop" class="w-[12%]  rounded-lg hidden text-black  grid-cols-1 bg-white p-2  transition duration-500 fixed right-[3%] top-[8%]">
+                    <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                        <small>
+                            <i class="fa fa-user me-2"></i> 
+                            My profile
+                        </small>  
+                    </a>
+                    <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                        <small>
+                            <i class="fa fa-user me-2"></i> 
+                            inbox
+                        </small>  
+                    </a>
+                    <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                        <small>
+                            <i class="fa fa-user me-2"></i> 
+                            Notifications
+                        </small>  
+                    </a>
+                    <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                        <small>
+                            <i class="fa fa-user me-2"></i> 
+                            Account Setting
+                        </small>  
+                    </a>
+                    <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                        <small>
+                            <i class="fa fa-user me-2"></i> 
+                            Log out
+                        </small>  
+                    </a>
+             </div>
+               
+            </div>
+    
+        </div>
+      
+    </div>
+
+     <!--============NAV 2==================-->
+<div  id="navbar" class=" w-screen  bg-white text-black lg:bg-transparent lg:text-white"> 
+    <div class=" flex max-w-[95%] justify-between h-[90px] lg:max-w-[80%] mx-auto">
+        <div class="grid place-items-center">
+            <h1 class="navbarlinks text-3xl text-blue-900 lg:text-white font-black"><i class="fa fa-map-marker-alt me-2"></i>Travela</h1>
+        </div>
+       
+            <div class="navbarlinks text-white hidden lg:flex lg:flex-wrap justify-between h-[90px]">
+                
+                    <div   class="navbarlinks h-full px-[5px] flex items-center cursor-pointer bg-gradient-to-top bg-top bg-[length:100%_200%] hover:bg-bottom transition-all duration-1000 ease-out "><a href="#home" class="mr-4 hover:bg-[#13357B]  hover:text-white">Home</a></div>
+                    <div   class="h-full px-[5px] flex items-center cursor-pointer bg-gradient-to-top bg-top bg-[length:100%_200%] hover:bg-bottom transition-all duration-1000 ease-out"><a href="#home" class="mr-4">About</a></div>
+                    <div   class="h-full px-[5px] flex items-center cursor-pointer bg-gradient-to-top bg-top bg-[length:100%_200%] hover:bg-bottom transition-all duration-1000 ease-out"><a href="#home" class="mr-4">Service</a></div>
+                    <div   class="h-full px-[5px] flex items-center cursor-pointer bg-gradient-to-top bg-top bg-[length:100%_200%] hover:bg-bottom transition-all duration-1000 ease-out"><a href="#home" class="mr-4">Destination</a></div>
+                    <div   class="h-full px-[5px] flex items-center cursor-pointer bg-gradient-to-top bg-top bg-[length:100%_200%] hover:bg-bottom transition-all duration-1000 ease-out"><a href="#World" class="mr-4">Blog</a></div>
+                    <div id="pages"  class="h-full px-[5px] flex items-center cursor-pointer bg-gradient-to-top bg-top bg-[length:100%_200%] hover:bg-bottom transition-all duration-1000 ease-out">
+                        <a  class="mr-4">Pages <i class="fa-solid fa-caret-down"></i></a>
+                   <!-- dropdown -->
+                    <div id="mydashdrop2" class="w-[12%]  rounded-lg hidden text-black  transition-all duration-1000 ease-out grid-cols-1 bg-white p-2 fixed right-[18%] top-[24%]">
+                        <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                            <small>
+                                <i class="fa fa-user me-2"></i> 
+                                My profile
+                            </small>  
+                        </a>
+                        <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                            <small>
+                                <i class="fa fa-user me-2"></i> 
+                                inbox
+                            </small>  
+                        </a>
+                        <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                            <small>
+                                <i class="fa fa-user me-2"></i> 
+                                Notifications
+                            </small>  
+                        </a>
+                        <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                            <small>
+                                <i class="fa fa-user me-2"></i> 
+                                Account Setting
+                            </small>  
+                        </a>
+                        <a href="#Packages" class="mr-4 hover:bg-[#13357B]  hover:text-white">
+                            <small>
+                                <i class="fa fa-user me-2"></i> 
+                                Log out
+                            </small>  
+                        </a>
+                 </div>
+            </div>
+                    <div   class="navbarlinks  h-full px-[5px] flex items-center cursor-pointer bg-gradient-to-top bg-top bg-[length:100%_200%] hover:bg-bottom transition-all duration-1000 ease-out"><a href="#home" class="mr-4">contact</a></div>
+                    <div class=" px-[5px] flex items-center cursor-pointer">
+                        <button class=" bg-[#13357B] text-white p-3 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500">Book Now</button>
+                       </div>
+          </div> 
+                <div id="hamburger" class="w-[45px] h-[45px] lg:hidden border-[2px] mr-0 border-blue-900 rounded-[8px] flex justify-center items-center mt-[25px]">
+                    <i class="fa-solid fa-bars text-black"></i>
+                </div>
+     </div>
+      <!--============HAMBURGER==================-->
+     <hr id="line" class="font-light opacity-70 ">
+       <div id="phoneNav" class="w-full hidden lg:hidden grid grid-cols-1 bg-white h-[50vh]  transition duration-500 fixed -right-0 top-[18%]">
+              <div class="text-[15px] text-[black]  bg-white pl-5">HOME</div>
+              <div class="text-[15px] text-[black]  bg-white pl-5">About</div>
+              <div class="text-[15px] text-[black]  bg-white pl-5">Service</div>
+              <div class="text-[15px] text-[black]  bg-white pl-5">Destination</div>
+              <div class="text-[15px] text-[black]  bg-white pl-5">Blog</div>
+              <div class="text-[15px] text-[black]  bg-white pl-5">Pages</div>
+              <div class="text-[15px] text-[black]  bg-white pl-5">contact</div>
+       </div>
+  </div>
+       
+    </div>
+
+  <!--------------------------------------HOME AND ABOUT-------------------------------------------->
+
+  <div id="homeAndAbout" class="relative">
+    <!--============ HOME =================-->
+  <div id="home" class="relative h-screen w-screen">
+    <div id="slider" class="absolute inset-0 z-5 h-full w-full overflow-hidden transition-all duration-1000 ease-out">
+        <img src='./images/2.jpg' alt='' class="block h-full transition-all duration-1000 ease-out w-full object-cover">
+        <img src='./images/1.jpg' alt='' class="hidden h-full transition-all duration-1000 ease-out w-full object-cover">
+        <img src='https://demo.htmlcodex.com/3232/tourism-website-template/img/carousel-2.jpg' alt='' class="hidden h-full w-full transition-all duration-1000 ease-out object-cover">
+        <img src='./images/3.jpg' alt='' class="hidden h-full transition-all duration-1000 ease-out w-full object-cover">
+    </div>
+    <button id="prev" class="prev absolute z-10 top-1/2 left-0 transform -translate-y-1/2 px-4 py-2 flex items-center justify-center bg-opacity-50 bg-[#13357B] rounded-r-[30%]">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <button id="next" class="next absolute z-10 top-1/2 right-0 transform -translate-y-1/2 px-4 py-2 flex items-center justify-center bg-opacity-50 bg-[#13357B] rounded-l-[30%]">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+    <div class="absolute z-11 inset-x-0 mx-auto w-8/12 flex flex-col justify-center items-center text-center gap-3 lg:gap-y-10 top-[30%] ">
+        <h1 class="md:text-xl font-bold text-[#ffffff] text-center">EXPLORE THE WORLD</h1>
+        <h1 class="md:text-4xl text-center font-bold text-[#ffffff] text-lg">Let's Explore the World Together</h1>
+        <p class="md:text-xl text-center text-[#ffffff] text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium, dolorum harum sed incidunt optio nobis ab delectus enim.</p>
+        <button class="bg-[#13357B] text-white lg:py-2 lg:px-6 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500 text-sm p-1">Discover Now</button>
+    </div>
+</div>
+
+   <!--============ SERACHBAR =================-->
+    <div id="searchbar" class="absolute inset-x-0 mx-auto w-11/12 sm:w-4/5 md:w-3/5 lg:w-11/12 bg-[#13357B] bg-opacity-80 rounded-full p-8 md:p-10 top-[29.5%] md:top-[34%] lg:top-[36%]">
+      <div class="bg-white flex border rounded-full text-black justify-between p-1">
+        <input type="email" placeholder="Eg: Thailand" class="w-full bg-transparent focus:outline-none text-xs md:text-base px-2 md:px-4">
+        <button class="bg-[#13357B] text-white p-2 md:p-3 text-xs md:text-base rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500">SEARCH</button>
+      </div>
+    </div>
+ 
+ <!--============ ABOUT =================-->
+<div id="about" class="w-screen  flex flex-col md:flex-row md:justify-evenly  items-center py-[180px]">
+    <div
+        class="border-[40px] h-[300px] w-[250px]  sm:h-[400px] sm:w-[300px]  lg:h-[500px] lg:w-[400px] border-y-[white] border-x-[#13357B] ">
+        <img src="./images/about-img.jpg" class="h-full w-full" alt="">
+    </div>
+    <div class="w-[250px] sm:w-[300px] lg:w-[550px] flex flex-col gap-[20px] " style="background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url('https://demo.htmlcodex.com/3232/tourism-website-template/img/about-img-1.png');">
+        <div class="flex flex-col h-[80px]">
+            <div class="flex h-[60px] items-center w-[150px] justify-between">
+                <div class="text-[12px] md:text-[15px] lg:text-[20px] text-left">ABOUT US</div>
+                <div class="w-[40px] h-[2px] border-[2px] border-[black] mt-[5px]"></div>
+            </div>
+            <div class="text-[20px] md:text-[30px] lg:text-[40px]">
+                Welcome To Travela
+            </div>
+        </div>
+
+        <div class="text-[8px] md:text-[10px] lg:text-[15px]">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Expedita perspiciatis temporibus consequuntur
+            exercitationem officiis magni laboriosam beatae repellendus alias provident! Deserunt quasi deleniti
+            temporibus incidunt suscipit, dolorem vitae soluta corporis!</div>
+
+        <div class="text-[8px] md:text-[10px] lg:text-[15px]">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Expedita perspiciatis temporibus consequuntur
+            exercitationem officiis magni laboriosam beatae repellendus alias provident! Deserunt quasi deleniti
+            temporibus incidunt suscipit, dolorem vitae soluta corporis!</div>
+
+        <div class="flex w-auto  md:w-[70%] justify-between">
+            <div class="flex flex-col gap-[3px] sm:gap-[5px]">
+                <div class="flex gap-[5px] items-center">
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="text-[10px] lg:text-[15px]">First Class Flights</div>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="text-[10px] lg:text-[15px]">First Class Flights</div>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="text-[10px] lg:text-[15px]">First Class Flights</div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[5px]">
+                <div class="flex gap-[5px] items-center">
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="text-[10px] lg:text-[15px]">First Class Flights</div>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="text-[10px] lg:text-[15px]">First Class Flights</div>
+                </div>
+                <div class="flex gap-[5px] items-center">
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="text-[10px] lg:text-[15px]">First Class Flights</div>
+                </div>
+            </div>
+           </div>
+           <div>
+            <button class="bg-[#13357B] text-white p-2 md:p-3 text-xs md:text-base rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500">READ MORE</button>
+           </div>
+         
+        </div>
+    </div>
+ </div>
+  
+
+<!-------------------------------------------SERVICES------------------------------------------------>
+
+<div id="services" class="flex flex-col items-center justify-center bg-[#f0eded] gap-y-8 py-20">
+    <div  id="serviceheader">
+        <div class="flex items-center justify-center gap-x-3">
+            <div class="h-[2px] w-8 bg-[#13357B]"></div> <h1 class="text-sm lg:text-xl font-bold text-blue-900 text-center"> SERVICES </h1> <div class="h-[2px] w-8 bg-[#13357B]"></div>
+        </div>
+        <h1 class="font-bold text-3xl">OUR SERVICES</h1>
+    </div>
+   
+
+     <!--== CARDS ==-->
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4 w-11/12 max-w-screen-lg">
+        <div class="border border-blue-900 bg-white  transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center group-hover:text-white">
+                <h1 class="font-bold mb-2">World Wide Tours</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <p class="w-8/12  text-gray-500 text-sm text-right transition duration-300  group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    <div><i class="fa fa-globe fa-4x text-primary group-hover:text-white text-blue-900 transition duration-300"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-blue-900 bg-white transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="font-bold mb-2">World Wide Tours</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <div><i class="fa fa-globe fa-4x text-primary group-hover:text-white text-blue-900"></i></div>
+                    <p class="w-8/12  text-gray-500 text-sm text-left group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="border border-blue-900 bg-white transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center ">
+                <h1 class="font-bold mb-2">Travel Guides</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <p class="w-8/12  text-gray-500 text-sm text-right group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    <div><i class="fa fa-user fa-4x text-primary group-hover:text-white text-blue-900"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-blue-900 bg-white transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="font-bold mb-2">Travel Guides</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <div><i class="fa fa-user fa-4x text-primary group-hover:text-white text-blue-900"></i></div>
+                    <p class="w-8/12  text-gray-500 text-sm text-left group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="border border-blue-900 bg-white transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="font-bold mb-2">Event Management</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <p class="w-8/12  text-gray-500 text-sm text-right group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    <div><i class="fa fa-cog fa-4x text-primary group-hover:text-white text-blue-900"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-blue-900 bg-white transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="font-bold mb-2">Event Management</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <div><i class="fa fa-cog fa-4x text-primary group-hover:text-white text-blue-900"></i></div>
+                    <p class="w-8/12  text-gray-500 text-sm text-left group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="border border-blue-900 bg-white transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="font-bold mb-2">World Wide Tours</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <p class="w-8/12  text-gray-500 text-sm text-right group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    <div><i class="fa fa-globe fa-4x text-primary group-hover:text-white text-blue-900"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-blue-900 bg-white transition duration-300 hover:bg-[#13357B] hover:text-white rounded-lg p-6 group">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="font-bold mb-2">World Wide Tours</h1>
+                <div class="flex items-center justify-center gap-5">
+                    <div><i class="fa fa-globe fa-4x text-primary group-hover:text-white text-blue-900"></i></div>
+                    <p class="w-8/12  text-gray-500 text-sm text-left group-hover:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium.dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Illum laudantium</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button class="bg-[#13357B] text-white text-sm lg:text-xl py-3 px-8 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500 "><a href="#">Service more</a></button>
+    <br>
+</div>
+
+<!----------------------------------------DESTINATION------------------------------------------------>
+
+<div id="destination" class="py-20">
+    ] <div class="w-full flex items-center justify-center gap-x-3 ">
+        <div class="w-[40px] h-[2px] border-[2px] border-[#13357b]"></div>
+        <div class="text-[20px] text-[#13357B]">DESTINATION</div>
+        <div class="w-[40px] h-[2px] border-[2px] border-[#13357b]"></div>
+    </div>
+    <div class="text-[25px] sm:text-[35px] font-bold text-center mb-[40px]">Popular Destination</div>
+    <div class="w-screen flex flex-wrap justify-evenly gap-y-2.5">
+        <button
+            class="destinationbutton w-[150px] h-[40px] border-[2px] border-[black] rounded-[20px] bg-[#F2F2F2] text-black">ALL</button>
+        <button
+            class="destinationbutton w-[150px] h-[40px] border-[2px] border-[black] rounded-[20px] bg-[#F2F2F2]">USA</button>
+        <button
+            class="destinationbutton w-[150px] h-[40px] border-[2px] border-[black] rounded-[20px] bg-[#F2F2F2]">CANADA</button>
+        <button
+            class="destinationbutton w-[150px] h-[40px] border-[2px] border-[black] rounded-[20px] bg-[#F2F2F2]">EUROPE</button>
+        <button
+            class="destinationbutton w-[150px] h-[40px] border-[2px] border-[black] rounded-[20px] bg-[#F2F2F2]">CHINA</button>
+        <button
+            class="w-[150px] h-[40px] border-[2px] border-[black] rounded-[20px] bg-[#F2F2F2]">SINGAPORE</button>
+    </div>
+    <div id="populardestination" class="mt-5 w-screen">
+        <div id="ALL" class="destinationitem w-[95%] mx-auto">
+            <div class="hidden xl:flex gap-2">
+                <div class="flex w-[33%] flex-col gap-2">
+                    <div class="destinationphoto w-full h-[320px] rounded-[15px]  overflow-hidden  relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-1.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="photodetai  w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center ">
+                            <button class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full  h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-2.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                            <button
+                                class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-3.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                            <button
+                                class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-[33%] flex-col gap-2">
+                    <div class="w-full h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-4.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                            <button
+                                class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-5.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                            <button
+                                class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="w-full h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-6.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                            <button
+                                class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-[33%] flex-col gap-2">
+                    <div class="w-full h-[648px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-7.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                            <button
+                                class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                        <div
+                            class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                            <i class="fa-solid fa-plus text-[#13357B]"></i>
+                        </div>
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-8.jpg"
+                            class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                        <div
+                            class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                            <button
+                                class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                                Photos</button>
+                            <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                            <div class="flex gap-[10px] items-center h-[30px]">
+                                <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                                <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:hidden grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2">
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-1.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-2.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-3.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-4.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-5.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-6.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-7.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                    <div
+                        class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                        <i class="fa-solid fa-plus text-[#13357B]"></i>
+                    </div>
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-8.jpg"
+                        class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                    <div
+                        class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                        <button
+                            class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                            Photos</button>
+                        <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                        <div class="flex gap-[10px] items-center h-[30px]">
+                            <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                            <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+        <div id="USA" class="destinationitem flex  flex-wrap gap-y-[10px] justify-evenly">
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-5.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-6.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="CANADA" class="destinationitem flex flex-wrap gap-y-[10px] justify-evenly">
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-5.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-6.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="EUROPE" class="destinationitem flex flex-wrap gap-y-[10px] justify-evenly">
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-5.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-6.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="CHINA" class="destinationitem lex flex-wrap gap-y-[10px] justify-evenly">
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-5.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-6.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="SINGAPORE" class="destinationitem lex flex-wrap gap-y-[10px] justify-evenly">
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-5.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[320px] rounded-[15px]  overflow-hidden destinationphoto relative">
+                <div
+                    class="w-[40px] h-[40px] absolute top-[25px] plus duration-1000 z-10 right-[20px] hidden justify-center items-center rounded-[50%] bg-[white]">
+                    <i class="fa-solid fa-plus text-[#13357B]"></i>
+                </div>
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/destination-6.jpg"
+                    class="w-full h-full  duration-1000 cursor-pointer" alt="">
+                <div
+                    class="w-[50%] lg:w-[40%] absolute duration-1000 top-[100%]  ml-[12px] lg:ml-[20px] flex flex-col items-center photodetail">
+                    <button
+                        class="w-[100px] h-[25px] lg:w-[120px] lg:h-[35px] rounded-[20px] bg-[#13357B] text-[white] text-[10px] lg:text-[15px]">20
+                        Photos</button>
+                    <div class="text-[15px] lg:text-[25px text-[white]">New York City</div>
+                    <div class="flex gap-[10px] items-center h-[30px]">
+                        <div class="text-[white] text-[10px] lg:text-[15px]">View All Place</div>
+                        <div><i class="fa-solid fa-arrow-right text-[white]"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="destinationimageviewer"
+            class="bg-[#333333] bg-opacity-[0.5]  absolute top-0  z-100 flex justify-center ">
+            <img id="destinationimageviewerimage" class="absolute border-[2px] border-[white]" alt="">
+        </div>
+    </div>
+</div>
+<br>
+
+<!---------------------------------------WORLD------------------------------------------------------->
+
+<div id="exploreworld" class="w-screen py-20">
+    <div id="tourheader" class="w-[90%] sm:w-[70%] mx-auto flex  flex-col justify-center items-center gap-y-3 lg:gap-y-6">
+        <div class="flex items-center justify-cente gap-x-2">
+            <div class="h-[2px] w-8 bg-[#13357B]"></div><h1 class="text-sm lg:text-xl font-bold text-blue-900 text-center">EXPLORE TOUR</h1><div class="h-[2px] w-8 bg-[#13357B]"></div>
+        </div>
+        <div class="text-2xl lg:text-3xl font-bold text-black text-center">
+            The World
+        </div>
+        <div class="justify-center  text-center text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium quidem ad asperiores nesciunt
+            ducimus ipsa incidunt unde accusamus repellendus.
+        </div>
+    
+    <div class="flex gap-2 items-center justify-center">
+        <button class="tourbutton bg-white flex border rounded-[50px] text-black justify-between font-semibold p-2 lg:px-8 text-xs lg:text-base ">National Tour Category</button>
+        <button class="tourbutton bg-white flex border rounded-[50px] text-black justify-between font-semibold p-2 lg:px-8 text-xs lg:text-base">Internation Tour Category</button>
+    </div>
+   </div>
+    <div id="nationaltour" class="tour w-screen mt-10 ">
+        <div class="mx-auto w-[80%] grid max-[550px]:grid-cols-1 grid-cols-2 md:grid-cols-3 gap-2">
+            <div class="world overflow-hidden   h-[250px]  relative">
+                <img src="./images/1.jpg"
+                    class="rounded-xl w-full h-full duration-1000 scale-150 mb-[-80px] relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">Australia</div>
+                    <div class="flex gap-x-4">
+                        <div><span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span><span>8 cities</span></div>
+                        <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist Places
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-link fa-3x text-white"></i>
+                </div>
+            </div>
+            <div class="world overflow-hidden   h-[250px]  relative">
+                <img src="./images/1.jpg"
+                    class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">Australia</div>
+                    <div class="flex gap-x-4">
+                        <div><span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span><span>8 cities</span></div>
+                        <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist Places
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-link fa-3x text-white"></i>
+                </div>
+            </div>
+            <div class="world overflow-hidden   h-[250px]  relative">
+                <img src="./images/1.jpg"
+                    class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">Australia</div>
+                    <div class="flex gap-x-4">
+                        <div><span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span><span>8 cities</span></div>
+                        <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist Places
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-link fa-3x text-white"></i>
+                </div>
+                <div class="absolute bg-orange-600 -top-1 -left-1 p-5 rounded-tr-[40px] rounded-tl-[20px] rounded-br-[0] rounded-bl-[80px] bg-primary ">15% OFF</div>
+            </div>
+            <div class="world overflow-hidden   h-[250px]  relative">
+                <img src="./images/1.jpg"
+                    class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">Australia</div>
+                    <div class="flex gap-x-4">
+                        <div><span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span><span>8 cities</span></div>
+                        <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist Places
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-link fa-3x text-white"></i>
+                </div>
+            </div>
+            <div class="world overflow-hidden   h-[250px]  relative">
+                <img src="./images/1.jpg"
+                    class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">Australia</div>
+                    <div class="flex gap-x-4">
+                        <div><span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span><span>8 cities</span></div>
+                        <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist Places
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-link fa-3x text-white"></i>
+                </div>
+                <div class="absolute bg-green-500 -top-1 -left-1 p-5 rounded-tr-[40px] rounded-tl-[20px] rounded-br-[0] rounded-bl-[80px] bg-primary ">15% OFF</div>
+            </div>
+            <div class="world overflow-hidden   h-[250px]  relative">
+                <img src="./images/1.jpg"
+                    class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">Australia</div>
+                    <div class="flex gap-x-4">
+                        <div><span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span><span>8 cities</span></div>
+                        <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist Places
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-link fa-3x text-white"></i>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="internationaltour" class="tour w-screen mt-10 ">
+        <div
+            class="internationaltourslider_container relative w-[90%] sm:w-[95%]  lg:w-[75%] mx-auto overflow-x-hidden">
+            <span class="internationaltourleftBtn absolute left-[3%] top-[50%] z-10">
+                <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <div class="internationaltourslider flex w-full  gap-x-[0%] sm:gap-x-[2%]">
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-1.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-2.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-3.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-4.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                   
+                </div>
+                <div class="world overflow-hidden first_img w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-5.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+
+                <!-- first image -->
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-1.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-2.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-3.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-4.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-5.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <!-- last image -->
+                <div class="world overflow-hidden last_img w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-1.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-2.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-3.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-4.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="world overflow-hidden  w-full sm:w-[49%] lg:w-[32%] flex-shrink-0  relative">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/explore-tour-5.jpg"
+                        class="rounded-xl w-full h-full  duration-1000 mb-[-80px] relative" alt="">
+                    <div class="w-full text-white flex flex-col items-center relative z-20">
+                        <div class="font-bold text-[25px]">Australia</div>
+                        <div class="flex gap-x-4">
+                            <div><span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span><span>8 cities</span></div>
+                            <div><span><i class="fa-solid fa-eye"></i></span><span class="ml-[2px]">143+ Tourist
+                                    Places </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                        <i class="fa-solid fa-link fa-3x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <span class="internationaltourrightBtn absolute right-[3%] top-[50%] z-10">
+                <i class="fas fa-arrow-right"></i>
+            </span>
+        </div>
+
+    </div>
+
+</div>
+<br>
+
+<!-------------------------------------------PACKAGES------------------------------------------------>
+
+<div id="package" class="py-20 relative">
+   
+    <div id="packageheader" class="w-[90%] sm:w-[70%] mx-auto flex  flex-col justify-center items-center gap-y-3 lg:gap-y-6">
+        <div class="flex items-center justify-center gap-x-2">
+            <div class="h-[2px] w-8 bg-[#13357B]"></div><h1 class="text-sm lg:text-xl font-bold text-blue-900 text-center">PACKAGES</h1><div class="h-[2px] w-8 bg-[#13357B]"></div>
+        </div>
+        <div class="text-2xl lg:text-3xl font-bold text-black text-center">
+            Awesome Packages
+        </div>  
+   </div>
+
+    <div class="packageslider_container  w-[90%] sm:w-[95%]  lg:w-[85%] mx-auto overflow-x-hidden mt-12">
+        <span
+            class="PackageleftBtn absolute left-[8%] top-[17%] lg:top-[18%] z-10 border-[1px] border-[#13357B] flex justify-center items-center w-[80px] h-[40px] rounded-[20px]">
+            <i class="fa-solid fa-arrow-left text-[#13357B]"></i>
+        </span>
+        <div class="packageslider flex w-full  gap-x-[0%] sm:gap-x-[2%]">
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-1.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute " alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-2.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-3.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 first_img">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-4.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <!-- first image -->
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-1.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-2.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-3.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-4.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <!-- last image -->
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] last_img flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-1.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-2.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-3.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+            <div class="packageitem w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 ">
+                <div class="packageitemimage w-full h-[300px] relative overflow-hidden">
+                    <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/packages-4.jpg"
+                        class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                    <div
+                        class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                        249</div>
+                    <div
+                        class="w-full flex justify-evenly h-[40px] items-center text-white bg-[#0000004d] absolute bottom-0 z-20">
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Thailand</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>3 days</div>
+                        </div>
+                        <div class="flex gap-x-2.5">
+                            <div><i class="fa-solid fa-user"></i></div>
+                            <div>2 Person</div>
+                        </div>
+                    </div>
+                    <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                        <div class="w-0 h-0 duration-1000 bg-[#13337b99]"></div>
+                    </div>
+                </div>
+                <div class="w-full p-5 bg-[#F2F2F2]">
+                    <div class="font-bold text-xl">Thailand Trip</div>
+                    <div>Hotel Deals</div>
+                    <div class="flex gap-x-1 text-[#13357B] mt-1"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est
+                        beatae eos
+                        aperiam cum
+                        dolores, corporis numquam sit explicabo.</div>
+                </div>
+                <div
+                    class="rounded-b-xl flex items-center justify-between px-5 text-[white] font-bold h-[40px] bg-[#13357B]">
+                    <div>Read More</div>
+                    <div>Book Now</div>
+                </div>
+            </div>
+        </div>
+        <span
+            class="PackagerightBtn absolute right-[8%] top-[17%] lg:top-[18%] z-10 border-[1px] border-[#13357B] flex justify-center items-center w-[80px] h-[40px] rounded-[20px]">
+            <i class="fas fa-arrow-right text-[#13357B]"></i>
+        </span>
+    </div>
+
+</div>
+
+<!----------------------------------------TOURISM---------------------------------------------------->
+
+<div id="tourism" class="w-screen  py-20">
+    <div id="touismheader" class="w-[90%] sm:w-[70%] mx-auto flex  flex-col justify-center items-center gap-y-3 lg:gap-y-6">
+        <div class="flex items-center justify-center gap-x-2">
+            <div class="h-[2px] w-8 bg-[#13357B]"></div><h1 class="text-sm lg:text-xl font-bold text-blue-900 text-center">OUR GALLERY</h1><div class="h-[2px] w-8 bg-[#13357B]"></div>
+        </div>
+        <div class="text-2xl lg:text-3xl font-bold text-black text-center">
+            Torism & Travelling Gallery
+        </div>
+        <div class="justify-center  text-center text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium quidem ad asperiores nesciunt
+            ducimus ipsa incidunt unde accusamus repellendus.
+        </div>
+    
+   
+   </div>
+   
+    <div class="hidden w-[90%]  mx-auto xl:flex flex-wrap gap-[1%] mt-10 ">
+        <div class="w-[14%] flex flex-col gap-2">
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-1.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-6.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+        </div>
+        <div class="w-[26.5%] flex flex-col gap-2">
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-2.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-3.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+        </div>
+        <div class="w-[14%] flex flex-col gap-2">
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-4.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-5.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+        </div>
+        <div class="w-[26.5%] flex flex-col gap-2">
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-7.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-8.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+        </div>
+        <div class="w-[15%] flex flex-col gap-2">
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-9.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+            <div class="tourismitem overflow-hidden   h-[250px]  relative">
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-10.jpg"
+                    class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+                <div class="w-full text-white flex flex-col items-center relative z-20">
+                    <div class="font-bold text-[25px]">World Tour</div>
+                    <div class="flex gap-x-4">
+                        <span>View All Place</span>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div
+                    class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                    <i class="fa-solid fa-plus fa-3x text-white"></i>>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-[98%] mt-10 mx-auto grid max-[550px]:grid-cols-1 grid-cols-2 md:grid-cols-3  gap-2 xl:hidden">
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-1.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-6.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-2.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-3.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-4.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-5.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-7.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-8.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-9.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+        <div class="tourismitem overflow-hidden   h-[250px]  relative">
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/gallery-10.jpg"
+                class="rounded-xl w-full h-full  duration-1000  relative" alt="">
+            <div class="w-full text-white flex flex-col items-center relative z-20">
+                <div class="font-bold text-[25px]">World Tour</div>
+                <div class="flex gap-x-4">
+                    <span>View All Place</span>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div
+                class="tourismplus rounded-xl w-full h-full hidden bg-[#13337b99] justify-center items-center absolute top-0 z-10 ">
+                <i class="fa-solid fa-plus fa-3x text-white"></i>>
+            </div>
+        </div>
+    </div>
+    <div id="tourismimageviewer" class="bg-[#333333] bg-opacity-[0.5]  absolute top-0  z-100 flex justify-center ">
+        <img id="tourismimageviewerimage" class="absolute border-[2px] border-[white] " alt="">
+    </div>
+</div>
+
+<!--------------------------------------------BOOK A TOUR-------------------------------------------->
+
+<div id="Tour" class="bg-[url('https://demo.htmlcodex.com/3232/tourism-website-template/img/tour-booking-bg.jpg')] bg-fixed">
+    <div class="bg-[#13357B] bg-opacity-60 w-full text-white p-6 md:p-[120px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-8">
+        <!--== LEFT ==-->
+        <div class="flex flex-col gap-4 lg:max-w-[450px] lg:gap-[40px]">
+          <div>
+            <h1 class="flex gap-2 items-center font-bold">
+              BOOKING <div class="h-[2px] w-10 bg-white"></div>
+            </h1>
+            <h1 class="text-2xl md:text-4xl font-bold">Online Booking</h1>
+          </div>
+          <p class="text-sm md:text-base">
+            Lorem ipsum, dolor sit amet consectetur adipisicing ipsum, dolor sit amet consectetur adipisicing elit. Illum laudantium, dolorum harum sed incidunt optio nobis ab delectus enim.
+          </p>
+          <p class="text-sm md:text-base">
+            Lorem ipsum, dolor sit amet consectetur ipsum, dolor sit amet consectetur adipisicing adipisicing elit. Illum laudantium, dolorum harum sed incidunt optio nobis ab delectus enim.
+          </p>
+          <div>
+            <button class="bg-white text-blue-900 py-2 px-4 md:px-6 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500">
+              Read More
+            </button>
+          </div>
+        </div>
+        <!--== RIGHT ==-->
+        <div class="flex flex-col gap-4">
+          <h1 class="font-bold text-2xl md:text-3xl">BOOK A TOUR DEAL</h1>
+          <p class="text-sm md:text-base">
+            Get <span class="text-orange-600">50% off </span>your first adventure trip with travels. Get more deals offers here.
+          </p>
+          <div class="flex flex-col gap-3 lg:max-w-[450px]">
+            
+            <div class="flex flex-col md:flex-row gap-3">
+              <div class="border border-black rounded-lg p-4 bg-white w-full">
+                <input placeholder="Your Name" class="bg-transparent w-full focus:outline-none">
+              </div>
+              <div class="border border-black rounded-lg p-4 bg-white w-full">
+                <input placeholder="Your Email" class="bg-transparent w-full focus:outline-none">
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-3">
+              <div class="border border-black rounded-lg p-4 bg-white w-full">
+                <input placeholder="Your Phone" class="bg-transparent w-full focus:outline-none">
+              </div>
+              <div class="border border-black rounded-lg p-4 bg-white w-full">
+                <input placeholder="Your Address" class="bg-transparent w-full focus:outline-none">
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-3">
+              <div class="border border-black rounded-lg p-4 bg-white w-full">
+                <input placeholder="Tour Date" class="bg-transparent w-full focus:outline-none">
+              </div>
+              <div class="border border-black rounded-lg p-4 bg-white w-full">
+                <input placeholder="Number of People" class="bg-transparent w-full focus:outline-none">
+              </div>
+            </div>
+            <div class="border border-black rounded-lg p-4 bg-white">
+              <textarea placeholder="Special Request" class="bg-transparent w-full focus:outline-none"></textarea>
+            </div>
+            <button class="bg-[#13357B] text-white py-2 px-4 md:px-6 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!----------------------------------------MEET OUR GUIDE--------------------------------------------->
+
+<div id="guide" class="w-screen py-20">
+ 
+    <div id="guideheader" class="w-[90%] sm:w-[70%] mx-auto flex  flex-col justify-center items-center gap-y-3 lg:gap-y-6">
+        <div class="flex items-center justify-center gap-x-2">
+            <div class="h-[2px] w-8 bg-[#13357B]"></div><h1 class="text-sm lg:text-xl font-bold text-blue-900 text-center">TRAVEL GUIDE</h1><div class="h-[2px] w-8 bg-[#13357B]"></div>
+        </div>
+        <div class="text-2xl lg:text-3xl font-bold text-black text-center">
+            Meet Our Guide
+        </div>  
+   </div>
+    <!--== CARDS ==-->
+    <div class="w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+        <div class="guide  h-[422px] relative rounded-lg">
+            <div
+                class="absolute z-20 w-full top-0 h-[75%]  bg-bottom bg-[length:100%_200%] bg-gradient-to-bottom  rounded-lg  transition-all duration-700 ease-out ">
+            </div>
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/guide-1.jpg"
+                class=" w-full h-[75%]  rounded-t-lg" alt="">
+            <div
+                class="h-[25%] flex flex-col justify-center items-center bg-[#F2F2F2]  bg-top bg-[length:100%_200%]   transition-all duration-700 ease-out  rounded-b-lg">
+                <div class="text-2xl font-bold">Full Name</div>
+                <div class="text-lg ">Designation</div>
+            </div>
+            <div class="w-full flex justify-center">
+                <div
+                    class="z-40 flex justify-evenly w-[150px]  absolute rounded-[50px] border border-blue-900 p-2 bg-white top-[67%]  ">
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-twitter fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-linkedin-in fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-instagram fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-facebook-f fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="guide  h-[422px] relative rounded-lg">
+            <div
+                class="absolute z-20 w-full top-0 h-[75%]  bg-bottom bg-[length:100%_200%]   transition-all duration-700 ease-out ">
+
+            </div>
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/guide-2.jpg"
+                class=" w-full h-[75%] rounded-t-lg" alt="">
+            <div
+                class="h-[25%] flex flex-col justify-center items-center bg-[#F2F2F2]  bg-top bg-[length:100%_200%]   transition-all duration-700 ease-out rounded-b-lg">
+                <div class="text-2xl font-bold">Full Name</div>
+                <div class="text-lg">Designation</div>
+            </div>
+            <div class="w-full flex justify-center">
+                <div
+                    class="z-40 flex justify-evenly w-[150px]  absolute rounded-[50px] border border-blue-900 p-2 bg-white top-[67%]  ">
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-twitter fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-linkedin-in fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-instagram fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-facebook-f fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="guide  h-[422px] relative rounded-lg ">
+            <div
+                class="absolute z-20 w-full top-0 h-[75%]  bg-bottom bg-[length:100%_200%]   transition-all duration-700 ease-out ">
+
+            </div>
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/guide-3.jpg"
+                class=" w-full h-[75%] rounded-t-lg" alt="">
+            <div
+                class="h-[25%] flex flex-col justify-center items-center bg-[#F2F2F2]  bg-top bg-[length:100%_200%]   transition-all duration-700 ease-out rounded-b-lg">
+                <div class="text-2xl font-bold">Full Name</div>
+                <div class="text-lg">Designation</div>
+            </div>
+            <div class="w-full flex justify-center">
+                <div
+                    class="z-40 flex justify-evenly w-[150px]  absolute rounded-[50px] border border-blue-900 p-2 bg-white top-[67%]  ">
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-twitter fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-linkedin-in fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-instagram fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-facebook-f fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="guide  h-[422px] relative rounded-lg">
+            <div
+                class="absolute z-20 w-full top-0 h-[75%]  bg-bottom bg-[length:100%_200%]   transition-all duration-700 ease-out ">
+
+            </div>
+            <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/guide-4.jpg"
+                class=" w-full h-[75%] rounded-t-lg" alt="">
+            <div
+                class="h-[25%] flex flex-col justify-center items-center bg-[#F2F2F2]   bg-top bg-[length:100%_200%]   transition-all duration-700 ease-out rounded-b-lg">
+                <div class="text-2xl font-bold">Full Name</div>
+                <div class="text-lg ">Designation</div>
+            </div>
+            <div class="w-full flex justify-center">
+                <div
+                    class="z-40 flex justify-evenly w-[150px]  absolute rounded-[50px] border border-blue-900 p-2 bg-white top-[67%]  ">
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-twitter fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-linkedin-in fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1 w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-instagram fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                    <a class="btn border rounded-full p-1  w-[23%] bg-[#13357B] hover:bg-white"><i
+                            class="fab fa-facebook-f fw-normal  ml-1 text-white hover:text-blue-900"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------------our blog-------------------------------------------------->
+
+<div id="travelblogs" class="w-screen pt-32 pb-20">
+    <div id="travelblogheader" class="w-[70%] md:w-[50%] mx-auto gap-y-4">
+        <div class="w-full flex items-center justify-center gap-x-3 ">
+            <div class="w-[40px] h-[2px] border-[2px] border-[#13357b]"></div>
+            <div class="text-[20px] font-bold text-[#13357B]">OUR BLOG</div>
+            <div class="w-[40px] h-[2px] border-[2px] border-[#13357b]"></div>
+        </div>
+        <div class="w-full text-center text-[28px] lg:text-[40px] font-bold">Popular Travel Blogs</div>
+        <div class="w-full text-center text-[16px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam cum illum repellendus beatae sint
+            illo mollitia esse corrupti eum obcaecati!</div>
+    </div>
+    <div class="max-[880px]:w-[90%] w-[80%] mx-auto mt-10  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="packageitem border-gray-300">
+            <div class="travelitemimage w-full h-[300px] relative overflow-hidden">
+
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/blog-1.jpg"
+                    class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                <div
+                    class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                    249</div>
+                <div
+                    class="w-full flex justify-evenly h-[40px] items-center  bg-[#0000004d] absolute bottom-0 z-20">
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-calendar-days text-[#13357b]"></i></div>
+                        <div class="text-white">28 Jan 2050</div>
+                    </div>
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-thumbs-up text-[#13357b]"></i></div>
+                        <div class="text-white">3K</div>
+                    </div>
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-comments text-[#13357b]"></i></div>
+                        <div class="text-white">1K</div>
+                    </div>
+                </div>
+                <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                    <div class="w-full h-0 duration-500 flex justify-center items-center bg-[#13337b99]">
+                        <div class="absolute z-20 hidden travelchain">
+                            <i class="fa-solid fa-link fa-3x text-[white]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full p-5 bg-[#FFFFFF]">
+                <div class="text-[15px]">
+                    Posted By : Royal Hamblin
+                </div>
+                <div class="text-[25px] font-bold mt-2.5">Adventures Trip</div>
+                <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est beatae
+                    eos
+                    aperiam cum
+                    dolores, corporis numquam sit explicabo.</div>
+                <div class="flex items-center justify-between  mt-5 text-[white] font-bold h-[40px]">
+                    <button class="w-[120px] h-[40px] rounded-[20px] bg-[#13357B]">Book Now</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="packageitem ">
+            <div class="travelitemimage w-full h-[300px] relative overflow-hidden">
+
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/blog-2.jpg"
+                    class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                <div
+                    class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                    249</div>
+                <div
+                    class="w-full flex justify-evenly h-[40px] items-center  bg-[#0000004d] absolute bottom-0 z-20">
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-calendar-days text-[#13357b]"></i></div>
+                        <div class="text-white">28 Jan 2050</div>
+                    </div>
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-thumbs-up text-[#13357b]"></i></div>
+                        <div class="text-white">3K</div>
+                    </div>
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-comments text-[#13357b]"></i></div>
+                        <div class="text-white">1K</div>
+                    </div>
+                </div>
+                <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                    <div class="w-full h-0 duration-500 flex justify-center items-center bg-[#13337b99]">
+                        <div class="absolute z-20 hidden travelchain">
+                            <i class="fa-solid fa-link fa-3x text-[white]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full p-5 bg-[#FFFFFF]">
+                <div class="text-[15px]">
+                    Posted By : Royal Hamblin
+                </div>
+                <div class="text-[25px] font-bold mt-2.5">Adventures Trip</div>
+                <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est beatae
+                    eos
+                    aperiam cum
+                    dolores, corporis numquam sit explicabo.</div>
+                <div class="flex items-center justify-between  mt-5 text-[white] font-bold h-[40px]">
+                    <button class="w-[120px] h-[40px] rounded-[20px] bg-[#13357B]">Book Now</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="packageitem ">
+            <div class="travelitemimage w-full h-[300px] relative overflow-hidden">
+
+                <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/blog-3.jpg"
+                    class="rounded-t-xl w-full h-full duration-1000 absolute" alt="">
+                <div
+                    class="w-[100px] h-[50px] rounded-[10px] absolute top-0 left-[38%] z-20 text-[white] bg-[#13357B] flex justify-center items-center mt-[-10px]">
+                    249</div>
+                <div
+                    class="w-full flex justify-evenly h-[40px] items-center  bg-[#0000004d] absolute bottom-0 z-20">
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-calendar-days text-[#13357b]"></i></div>
+                        <div class="text-white">28 Jan 2050</div>
+                    </div>
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-thumbs-up text-[#13357b]"></i></div>
+                        <div class="text-white">3K</div>
+                    </div>
+                    <div class="flex gap-x-2.5">
+                        <div><i class="fa-solid fa-comments text-[#13357b]"></i></div>
+                        <div class="text-white">1K</div>
+                    </div>
+                </div>
+                <div class="rounded-t-xl absolute z-10 top-0  w-full h-full flex  justify-center items-center ">
+                    <div class="w-full h-0 duration-500 flex justify-center items-center bg-[#13337b99]">
+                        <div class="absolute z-20 hidden travelchain">
+                            <i class="fa-solid fa-link fa-3x text-[white]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full p-5 bg-[#FFFFFF]">
+                <div class="text-[15px]">
+                    Posted By : Royal Hamblin
+                </div>
+                <div class="text-[25px] font-bold mt-2.5">Adventures Trip</div>
+                <div class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis animi est beatae
+                    eos
+                    aperiam cum
+                    dolores, corporis numquam sit explicabo.</div>
+                <div class="flex items-center justify-between  mt-5 text-[white] font-bold h-[40px]">
+                    <button class="w-[120px] h-[40px] rounded-[20px] bg-[#13357B]">Book Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--------------------------------------OUR CLIENT SAY----------------------------------------------->
+
+<div id="client" class="py-20 relative">
+    <div id="clientheader" class="w-[90%] sm:w-[70%] mx-auto">
+        <div class="w-full flex items-center justify-center gap-x-3 ">
+            <div class="w-[40px] h-[2px] border-[2px] border-[#13357b]"></div>
+            <div class="text-[20px] font-bold text-[#13357B]">TESTIMONIAL</div>
+            <div class="w-[40px] h-[2px] border-[2px] border-[#13357b]"></div>
+        </div>
+        <div class="w-full text-center text-[28px] lg:text-[40px] font-bold">Our Client Say !!!</div>
+    </div>
+    <div class="clientslider_container  w-[90%] sm:w-[95%]  lg:w-[85%] mx-auto overflow-x-hidden mt-[40px]">
+        <span
+            class="clientleftBtn absolute left-[8%] top-[21%] lg:top-[21%] z-10 border-[1px] border-[#13357B] flex justify-center items-center w-[50px] h-[30px] sm:w-[80px] sm:h-[40px] rounded-[20px]">
+            <i class="fa-solid fa-arrow-left text-[#13357B]"></i>
+        </span>
+        <div class="clientslider flex w-full  gap-x-[0%] sm:gap-x-[2%]">
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px]  border-dashed p-2 border-[2px] border-white">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-1.jpg"
+                            class="rounded-[50%] object-cover ">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-2.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-3.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative first_img h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-4.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- first image -->
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px]  border-dashed p-2 border-white border-[2px]">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-1.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#13357B] h-[220px] w-full rounded-lg text-white">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-2.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-3.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-4.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- last image -->
+            <div class="relative last_img h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-1.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-2.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-3.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="relative h-[420px] w-full sm:w-[49%] lg:w-[32%] flex-shrink-0 rounded-lg">
+                <div class="bg-[#F2F2F2] text-black h-[220px] w-full rounded-lg">
+                    <p class=" text-center p-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Illum
+                        laudantium.dolor sit amet consectetur adipisicing.dolor sit amet consectetur adipisicing</p>
+                </div>
+                <div class="w-full absolute z-10 top-[40%]">
+                    <div class="mx-auto rounded-[50%] h-[100px] w-[100px] border-dashed p-2 border-[2px] border-white  ">
+                        <img src="https://demo.htmlcodex.com/3232/tourism-website-template/img/testimonial-4.jpg"
+                            class="rounded-[50%] object-cover">
+                    </div>
+                    <div class="mx-auto flex flex-col items-center  mt-[20px]">
+                        <h1 class="font-bold text-2xl w-full text-center">John Karry</h1>
+                        <h3 class="text-gray-500 w-full text-center">New York, USA</h3>
+                        <h1 class="text-blue-900 w-full flex justify-center text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </h1>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <span
+            class="clientrightBtn absolute right-[8%] top-[21%] lg:top-[21%] z-10 border-[1px] border-[#13357B] flex justify-center items-center w-[50px] h-[30px] sm:w-[80px] sm:h-[40px] rounded-[20px]">
+            <i class="fas fa-arrow-right text-[#13357B]"></i>
+        </span>
+    </div>
+
+</div>
+
+
+
+<!---------------------------------------FOOTER------------------------------------------------------>
+
+<div id="footerAndNewsletter" class="bg-[url('https://demo.htmlcodex.com/3232/tourism-website-template/img/carousel-2.jpg')] bg-fixed">
+   
+    <!----------newsletter--------------->
+
+    <div id="newsletter" class="bg-[#13357B] bg-opacity-70 w-full text-white p-8 md:p-[120px]">
+    <div class="flex flex-col max-w-[800px] mx-auto gap-10">
+      <div class="flex flex-col justify-center items-center gap-6">
+        <div class="flex items-center justify-center">
+          <div class="h-[2px] w-8 bg-white"></div>
+          <h1 class="text-base md:text-xl font-bold mx-2">SUBSCRIBE</h1>
+          <div class="h-[2px] w-8 bg-white"></div>
+        </div>
+        <div>
+          <h1 class="text-xl md:text-3xl font-bold text-center">OUR NEWSLETTER</h1>
+        </div>
+        <div class="text-center">
+          <p class="text-xs md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium. Dolor sit amet consectetur adipisicing elit. Dolor sit amet consectetur adipisicing elit. Illum laudantium.</p>
+        </div>
+      </div>
+      <div class="bg-white flex border rounded-full text-black justify-between px-2 py-1 md:px-4 md:py-2">
+        <input type="email" placeholder="Your Email" class="w-full bg-transparent focus:outline-none text-xs md:text-base">
+        <button class="bg-[#13357B] text-white p-1 md:p-3 text-xs md:text-base rounded-full hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-500">SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+    
+
+    <!----------main footer-------------->
+     <footer id="footer" class=" bg-[#1c1c20] text-white py-6 w-full">
+        <div class="container mx-auto p-12 py-23">
+            <div class="grid grid-col-1 lg:grid-cols-4 md:grid-cols-2 py-10 gap-3">
+                <!-- About Section -->
+                <div class="w-full mb-6 md:mb-0 gap-2">
+                    <h1 class="font-bold mb-6 text-xl md:text-2xl">Get in touch</h1>
+                    <div class="space-y-2">
+                        <h1 class="hover:tracking-[5px] transition-all duration-700 ease-out hover:text-blue-900"><i class="fas fa-home me-2"></i> 123 street, New York, USA</h1>
+                        <h1 class="hover:tracking-[5px] transition-all duration-700 ease-out hover:text-blue-900"><i class="fas fa-home me-2"></i> info@example.com</h1>
+                        <h1 class="hover:tracking-[5px] transition-all duration-700 ease-out hover:text-blue-900"><i class="fas fa-home me-2"></i> +012 345 6790</h1>
+                        <h1 class="hover:tracking-[5px] transition-all duration-700 ease-out hover:text-blue-900"><i class="fas fa-home me-2"></i> 123 345 6790</h1>
+                    </div>
+                    
+                    <div class="mt-[8px]">
+                        <i class="fas fa-share fa-2x text-white me-2"></i>
+                        <a class="btn rounded-full p-1 me-2 bg-[#13357B] hover:bg-white"><i class="fab fa-facebook-f h-[20px] w-[20px] ml-1 hover:text-blue-900"></i></a>
+                        <a class="btn  rounded-full p-1 me-2 bg-[#13357B] hover:bg-white"><i class="fab fa-instagram h-[20px] w-[20px] ml-1 hover:text-blue-900"></i></a>
+                        <a class="btn  rounded-full p-1 me-2 bg-[#13357B] hover:bg-white"><i class="fab fa-linkedin-in h-[20px] w-[20px] ml-1 hover:text-blue-900"></i></a>
+                        <a class="btn  rounded-full p-1 me-2 bg-[#13357B] hover:bg-white"><i class="fab fa-twitter fw-normal h-[20px] w-[20px] ml-1 hover:text-blue-900"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Links Section -->
+                <div class="w-full  mb-6 md:mb-0">
+                    <h1 class="font-bold  text-2xl mb-6">Company</h1>
+                    <div class="space-y-2">
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>About</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>careers</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Blog</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Press</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Gift Cards</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Magazine</h3>
+                    </div>
+                </div>
+    
+                <!-- Contact Section -->
+                <div class="w-full ">
+                    <h1 class="font-bold mb-6 text-2xl">Support</h1>
+                    <div class="space-y-2">
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>About</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>careers</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Blog</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Press</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Gift Cards</h3>
+                        <h3 class="hover:tracking-[10px] transition-all duration-700 ease-out hover:text-blue-900"> <i class="fas fa-angle-right me-2"></i>Magazine</h3>
+                    </div>
+                </div>
+    
+                <div class=" flex flex-col gap-5 w-full mb-6 md:mb-0 ">
+                    <div class="flex gap-2 mb-6">
+                        <div class="border justify-center rounded-lg items-center p-2 text-gray-500">
+                            <h2>English</h2>
+                            <select name="cars" id="cars" class="bg-[#1c1c20]">
+                                <option value="" disabled selected>Arabic</option>
+                                 <option value="volvo">Volvo</option>
+                                 <option value="saab">Saab</option>
+                                 <option value="mercedes">Mercedes</option> 
+                                 <option value="audi">Audi</option>
+                                 </select>
+                        </div>
+                        <div class="border justify-center rounded-lg items-center p-2 text-gray-500">
+                            <h2>$</h2>
+                            <select name="cars" id="cars" class="bg-[#1c1c20]">
+                                <option value="" disabled selected>USD</option>
+                                 <option value="volvo">Volvo</option>
+                                 <option value="saab">Saab</option>
+                                 <option value="mercedes">Mercedes</option>
+                                 <option value="audi">Audi</option>
+                                 </select>
+                        </div>
+                    </div>
+                    <h1 class="text-2xl">Payments</h1>
+                    <div>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                    </div>
+                    <div>
+    
+                    </div>
+                   
+                </div>
+            </div>
+    
+           
+        </div>
+        <hr>
+            <div class="mt-6 flex items-center justify-center text-center text-sm text-white">
+               <div class=""> © Your site Name , <span  class="text-gray-400">All right reserved.</span> </div><div class="ml-5"><span class="text-gray-400">Designed by </span>HTML Codex.</div>
+            </div>
+    </footer>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
